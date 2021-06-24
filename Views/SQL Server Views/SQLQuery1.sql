@@ -32,7 +32,7 @@ select * from vwEmployeesByDepartment
 
 --DML Operations on the View
 
-insert into vwEmployeesByDepartment values(110,'Mandy',40000,'IT','BVRM')	--error
+insert into vwEmployeesByDepartment values(110,'Mandy',40000,'BVRM',12,'HR')	--error
 
 --Below update will Execute because modification is only on single table and also Department table doesnot contain Salary column
 update vwEmployeesByDepartment set Salary = 40000 where EmpID=102
